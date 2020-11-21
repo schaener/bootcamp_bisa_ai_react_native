@@ -36,7 +36,7 @@ export const request = (state) =>
   state.merge({fetching: true, data: state.data});
 
 export const append = (state, {data}) => {
-  data = state.data.concat(data);
+  data = [data, ...state.data];
 
   return state.merge({fetching: false, data});
 };

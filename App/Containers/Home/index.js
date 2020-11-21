@@ -113,7 +113,9 @@ const HomeScreen = (props) => {
         {props.deathData != null && (
           <FlatList
             extraData={props}
-            keyExtractor={(item, index) => item.key}
+            keyExtractor={(item, index) => {
+              return index.toString();
+            }}
             style={{padding: 5, bottom: 5}}
             data={props.deathData}
             renderItem={_renderItem}
