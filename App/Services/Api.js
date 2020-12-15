@@ -36,7 +36,7 @@ const create = (baseURL = BASE_URL) => {
   // way at this level.
   //
 
-  const getDeathData = () => api.get('deaths');
+
   // ------
   // STEP 3
   // ------
@@ -52,7 +52,6 @@ const create = (baseURL = BASE_URL) => {
   return {
     // a list of the API functions from step 2
 
-    getDeathData,
   };
 };
 
