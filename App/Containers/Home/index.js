@@ -27,7 +27,6 @@ import {
   Dimensions,
   KeyboardAvoidingView,
 } from 'react-native';
-import numberFormat from '../Helpers';
 const HomeScreen = (props) => {
   const [countryName, setCountryName] = useState(null);
   const [deathTotal, setDeathTotal] = useState(null);
